@@ -75,7 +75,7 @@ public class EmployeeService {
 		BigDecimal cs;
 		int i = 0;
 		int[] integerValues = { 250000, 500000, 1000000, 2500000 };
-
+                employeeRepo.save(employee);
 		EmployeeResponse employeeResponse = modelMapper.map(employee, EmployeeResponse.class);
 		employeeResponse.setMessage("Success");
 		Date date = employee.getDoj();
